@@ -1,0 +1,20 @@
+<ibm-table-container>
+  <ibm-table-header>
+    <h4 ibmTableHeaderTitle>Table title</h4>
+    <p ibmTableHeaderDescription>Table description</p>
+  </ibm-table-header>
+  <!--
+    app-* components are for demo purposes only.
+    You can create your own implementation by using the component source as an example.
+  -->
+  <ibm-table
+    size="md"
+    [striped]="striped"
+    [model]="tableModel"
+    [sortable]="sortable"
+    [showSelectionColumn]="showSelectionColumn"
+    [enableSingleSelect]="enableSingleSelect"
+    [isDataGrid]="isDataGrid"
+  >
+  </ibm-table>
+</ibm-table-container>

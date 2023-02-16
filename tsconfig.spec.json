@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jest"
+    ]
+  },
+  "files": [
+    "src/jest-global-mocks.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
+  ],
+  "no-import-side-effect": [
+    true,
+    {
+      "ignore-module": "(core-js/.*|zone\\.js/.*|@angular/localize/init)$"
+    }
+  ]
+}
